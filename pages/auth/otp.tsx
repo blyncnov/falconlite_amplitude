@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-// import OtpInput from "react-otp-input";
+import React, { useState } from "react";
+import OtpInput from "react18-input-otp";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
@@ -75,28 +75,22 @@ const OTP = () => {
               <div className="test-otp-container">
                 <form onSubmit={SubmitOTPHandler}>
                   <div>
-                    {/* <OtpInput
-                      value={code}
-                      onChange={handleChange}
-                      numInputs={5}
-                      separator={<span style={{ width: "8px" }}></span>}
-                      isInputNum={false}
-                      shouldAutoFocus={true}
-                      inputStyle={{
-                        border: "1px solid transparent",
-                        borderRadius: "8px",
-                        width: "54px",
-                        height: "54px",
-                        fontSize: "12px",
-                        color: "#000",
-                        fontWeight: "400",
-                        caretColor: "blue",
-                      }}
-                      focusStyle={{
-                        border: "1px solid #CFD3DB",
-                        outline: "none",
-                      }}
-                    /> */}
+                    {
+                      <OtpInput
+                        value={code}
+                        onChange={handleChange}
+                        numInputs={5}
+                        shouldAutoFocus
+                        errorStyle
+                        inputStyle={{
+                          color: "#00C8FF",
+                          fontSize: "15px",
+                          height: "50px",
+                          width: "50px",
+                        }}
+                        separator={<span>--</span>}
+                      />
+                    }
                   </div>
                   <div className="test--auth-form-container">
                     <button>PROCEED</button>

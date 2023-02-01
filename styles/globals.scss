@@ -95,6 +95,10 @@ button {
 .test--auth__details {
   background-color: rgba(227, 236, 255, 1) !important;
   padding: 2em 4em 2em 2em;
+
+  @media (max-width: 768px) {
+    padding: 2em;
+  }
 }
 
 .test--public-logo-img {
