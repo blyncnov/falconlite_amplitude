@@ -4,7 +4,7 @@
 
 ## Demo
 
-Live Site URl : [Falconlite](https://falconlite_amplitude.vercel.app/)
+Live Site URl : [Falconlite](https://falconlite-amplitude.vercel.app/auth/sign-up)
 
 ## Built With
 
